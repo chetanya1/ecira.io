@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Study Materials</title>
+    <link rel="stylesheet" href="/css/content.css">
+</head>
+<body>
+    <form action="/content" method="POST"></form>
+    <div class="content">
+        <h1>Study Materials</h1>
+        <input type="text" id="searchInput" onkeyup="filterMaterials()" placeholder="Search for materials..">
+
+        <div class="accordion-section">
+            <div class="accordion">
+                <h2>Class 1 to 12 Study Materials</h2>
+                <button class="accordion-btn">Class 1</button>
+                <div class="panel">
+                    <ul>
+                        <li><a href="#">Maths Book</a></li>
+                        <li><a href="#">Science Notes</a></li>
+                        <li><a href="#">English PDF</a></li>
+                    </ul>
+                </div>
+                <button class="accordion-btn">Class 2</button>
+                <div class="panel">
+                    <ul>
+                        <li><a href="#">Maths Book</a></li>
+                        <li><a href="#">Science Notes</a></li>
+                        <li><a href="#">English PDF</a></li>
+                    </ul>
+                </div>
+                <!-- Add more classes similarly -->
+            </div>
+
+            <div class="accordion">
+                <h2>Post 12th Study Materials</h2>
+                <button class="accordion-btn">JEE</button>
+                <div class="panel">
+                    <ul>
+                        <li><a href="#">Physics Notes</a></li>
+                        <li><a href="#">Chemistry PDF</a></li>
+                        <li><a href="#">Mathematics Book</a></li>
+                    </ul>
+                </div>
+                <button class="accordion-btn">Engineering</button>
+                <div class="panel">
+                    <ul>
+                        <li><a href="#">Computer Science Notes</a></li>
+                        <li><a href="#">Electrical Engineering PDFs</a></li>
+                        <li><a href="#">Mechanical Engineering Books</a></li>
+                    </ul>
+                </div>
+                <!-- Add more categories similarly -->
+            </div>
+        </div>
+    </div>
+
+    <script src="scripts/content script.js"></script>
+</body>
+</html>
